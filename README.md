@@ -8,7 +8,6 @@ A simple space tourism website made using React, Vite, Framer motion and Tailwin
 ## Made using
 - React.JS
 - TailwindCSS
-- Vitest
 - react-router
 - framer-motion
 

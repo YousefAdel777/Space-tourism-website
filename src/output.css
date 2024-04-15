@@ -1056,6 +1056,10 @@ body{
   margin-top: 18rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .block{
   display: block;
 }
@@ -1651,6 +1655,14 @@ body{
 
   .lg\:ml-auto{
     margin-left: auto;
+  }
+
+  .lg\:mt-\[17rem\]{
+    margin-top: 17rem;
+  }
+
+  .lg\:mt-\[23\.5rem\]{
+    margin-top: 23.5rem;
   }
 
   .lg\:hidden{
