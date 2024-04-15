@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-[100svh] font-Barlow bg-slate-900;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-[15px] md:w-[750px] lg:w-[970px] xl:w-[1110px];
+  }
+  .navbar nav {
+    @apply h-24 w-3/5 relative hidden after:hidden after:w-[57%] after:-left-[446px] after:content-[''] after:absolute after:top-1/2 after:h-px after:bg-gray-500 lg:flex lg:pl-2 xl:pl-[7.75rem] lg:backdrop-blur-xl xl:after:block;
+  }
+  .navbar nav.show {
+    @apply min-h-[100svh] z-10 flex justify-center w-full absolute left-0 top-0 bg-slate-900 lg:justify-start lg:bg-transparent lg:relative lg:left-auto lg:top-auto lg:w-3/5 lg:min-h-0;
+  }
+  .navbar ul li span {
+    @apply text-white font-bold mr-[0.675rem] tracking-widest;
+  }
+  .navbar ul li {
+    @apply text-white uppercase h-1/5 flex items-center justify-center lg:h-full;
+  }
+  .navbar ul li a {
+    @apply h-full flex items-center tracking-[0.2em] relative text-xl lg:text-base;
+  }
+  .navbar ul li a::after {
+    @apply content-[''] absolute h-1 w-0 left-1/2 -translate-x-1/2 bottom-0 bg-transparent duration-300;
+  }
+  .navbar ul li a:hover::after {
+    @apply bg-gray-400 w-full;
+  }
+  .navbar ul li a.active::after {
+    @apply bg-white w-full;
+  }
+  .destination {
+    @apply flex flex-col items-center justify-center gap-10 lg:gap-0 lg:flex-row;
+  }
+  .destination-tabs li {
+    @apply h-full text-white uppercase tracking-[0.2em] relative cursor-pointer py-3;
+  }
+  .destination-tabs li::after {
+    @apply content-[''] absolute h-1 w-0 left-1/2 -translate-x-1/2 bottom-0 bg-transparent duration-300;
+  }
+  .destination-tabs li:hover::after {
+    @apply bg-gray-400 w-full;
+  }
+  .destination-tabs li.active::after {
+    @apply bg-white w-full;
+  }
+  .destination-info p {
+    @apply text-gray-300 uppercase mb-1 text-sm tracking-widest;
+  }
+  .destination-info span {
+    @apply text-white font-Bellefair uppercase text-xl xl:text-[1.75rem];
+  }
+  .crew .bullets span {
+    @apply w-4 h-4 rounded-full bg-gray-500 duration-300 hover:bg-white;
+  }
+  .crew .bullets span.active {
+    @apply bg-white;
+  }
+  .crew-member {
+    @apply flex flex-col-reverse gap-14 items-center lg:gap-0 lg:justify-between lg:flex-row;
+  }
+  .tech {
+    @apply flex flex-col-reverse items-center gap-12 lg:gap-24 lg:flex-row;
+  }
+  .tech-container .controls span {
+    @apply rounded-full cursor-pointer text-white text-2xl font-Bellefair flex items-center justify-center w-16 h-16 border-2 border-gray-400 duration-300 hover:bg-white hover:text-black md:w-20 md:h-20;
+  }
+  .tech-container .controls span.active {
+    @apply bg-white text-black;
+  }
+
+}
