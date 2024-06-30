@@ -413,9 +413,8 @@ video {
 }
 
 body{
-  min-height: 100svh;
   --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   font-family: Barlow Condensed, sans-serif;
 }
 
@@ -667,11 +666,13 @@ body{
 
 .navbar nav::after{
   position: absolute;
-  left: -446px;
+  left: 0px;
   top: 50%;
   display: none;
   height: 1px;
   width: 57%;
+  --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
   --tw-content: '';
@@ -1006,6 +1007,18 @@ body{
   top: 1.5rem;
 }
 
+.-left-14{
+  left: -3.5rem;
+}
+
+.top-1\/2{
+  top: 50%;
+}
+
+.-right-14{
+  right: -3.5rem;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -1040,6 +1053,10 @@ body{
   margin-top: 13rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .mb-\[2\.125rem\]{
   margin-bottom: 2.125rem;
 }
@@ -1050,14 +1067,6 @@ body{
 
 .mb-4{
   margin-bottom: 1rem;
-}
-
-.mt-72{
-  margin-top: 18rem;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
 }
 
 .block{
@@ -1108,12 +1117,32 @@ body{
   height: 4rem;
 }
 
+.h-\[350px\]{
+  height: 350px;
+}
+
+.h-10{
+  height: 2.5rem;
+}
+
 .max-h-\[500px\]{
   max-height: 500px;
 }
 
 .min-h-\[100svh\]{
   min-height: 100svh;
+}
+
+.min-h-\[350px\]{
+  min-height: 350px;
+}
+
+.min-h-\[345px\]{
+  min-height: 345px;
+}
+
+.min-h-\[310px\]{
+  min-height: 310px;
 }
 
 .w-48{
@@ -1126,6 +1155,10 @@ body{
 
 .w-16{
   width: 4rem;
+}
+
+.w-10{
+  width: 2.5rem;
 }
 
 .max-w-sm{
@@ -1154,6 +1187,11 @@ body{
 
 .basis-1\/2{
   flex-basis: 50%;
+}
+
+.-translate-y-1\/2{
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .transform{
@@ -1237,10 +1275,6 @@ body{
   overflow: hidden;
 }
 
-.overflow-visible{
-  overflow: visible;
-}
-
 .truncate{
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1294,20 +1328,20 @@ body{
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\.\/assets\/destination\/background-destination-mobile\.jpg\)\]{
-  background-image: url(./assets/destination/background-destination-mobile.jpg);
+.bg-\[url\(\.\.\/assets\/destination\/background-destination-mobile\.jpg\)\]{
+  background-image: url(../assets/destination/background-destination-mobile.jpg);
 }
 
-.bg-\[url\(\.\/assets\/home\/background-home-mobile\.jpg\)\]{
-  background-image: url(./assets/home/background-home-mobile.jpg);
+.bg-\[url\(\.\.\/assets\/home\/background-home-mobile\.jpg\)\]{
+  background-image: url(../assets/home/background-home-mobile.jpg);
 }
 
-.bg-\[url\(\.\/assets\/technology\/background-technology-mobile\.jpg\)\]{
-  background-image: url(./assets/technology/background-technology-mobile.jpg);
+.bg-\[url\(\.\.\/assets\/technology\/background-technology-mobile\.jpg\)\]{
+  background-image: url(../assets/technology/background-technology-mobile.jpg);
 }
 
-.bg-\[url\(\.\/assets\/crew\/background-crew-mobile\.jpg\)\]{
-  background-image: url(./assets/crew/background-crew-mobile.jpg);
+.bg-\[url\(\.\.\/assets\/crew\/background-crew-mobile\.jpg\)\]{
+  background-image: url(../assets/crew/background-crew-mobile.jpg);
 }
 
 .bg-cover{
@@ -1597,20 +1631,20 @@ body{
     width: 17.5rem;
   }
 
-  .md\:bg-\[url\(\.\/assets\/destination\/background-destination-tablet\.jpg\)\]{
-    background-image: url(./assets/destination/background-destination-tablet.jpg);
+  .md\:bg-\[url\(\.\.\/assets\/destination\/background-destination-tablet\.jpg\)\]{
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
   }
 
-  .md\:bg-\[url\(\.\/assets\/home\/background-home-tablet\.jpg\)\]{
-    background-image: url(./assets/home/background-home-tablet.jpg);
+  .md\:bg-\[url\(\.\.\/assets\/home\/background-home-tablet\.jpg\)\]{
+    background-image: url(../assets/home/background-home-tablet.jpg);
   }
 
-  .md\:bg-\[url\(\.\/assets\/technology\/background-technology-tablet\.jpg\)\]{
-    background-image: url(./assets/technology/background-technology-tablet.jpg);
+  .md\:bg-\[url\(\.\.\/assets\/technology\/background-technology-tablet\.jpg\)\]{
+    background-image: url(../assets/technology/background-technology-tablet.jpg);
   }
 
-  .md\:bg-\[url\(\.\/assets\/crew\/background-crew-tablet\.jpg\)\]{
-    background-image: url(./assets/crew/background-crew-tablet.jpg);
+  .md\:bg-\[url\(\.\.\/assets\/crew\/background-crew-tablet\.jpg\)\]{
+    background-image: url(../assets/crew/background-crew-tablet.jpg);
   }
 
   .md\:px-14{
@@ -1641,12 +1675,12 @@ body{
     margin-bottom: 1.25rem;
   }
 
-  .lg\:mt-72{
-    margin-top: 18rem;
+  .lg\:mt-\[17rem\]{
+    margin-top: 17rem;
   }
 
-  .lg\:mt-\[24\.5rem\]{
-    margin-top: 24.5rem;
+  .lg\:mt-\[23\.5rem\]{
+    margin-top: 23.5rem;
   }
 
   .lg\:mb-6{
@@ -1657,20 +1691,28 @@ body{
     margin-left: auto;
   }
 
-  .lg\:mt-\[17rem\]{
-    margin-top: 17rem;
-  }
-
-  .lg\:mt-\[23\.5rem\]{
-    margin-top: 23.5rem;
+  .lg\:block{
+    display: block;
   }
 
   .lg\:hidden{
     display: none;
   }
 
+  .lg\:h-\[600px\]{
+    height: 600px;
+  }
+
   .lg\:max-h-\[600px\]{
     max-height: 600px;
+  }
+
+  .lg\:min-h-\[600px\]{
+    min-height: 600px;
+  }
+
+  .lg\:min-h-\[530px\]{
+    min-height: 530px;
   }
 
   .lg\:w-\[89\%\]{
@@ -1725,20 +1767,20 @@ body{
     gap: 5rem;
   }
 
-  .lg\:bg-\[url\(\.\/assets\/destination\/background-destination-desktop\.jpg\)\]{
-    background-image: url(./assets/destination/background-destination-desktop.jpg);
+  .lg\:bg-\[url\(\.\.\/assets\/destination\/background-destination-desktop\.jpg\)\]{
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
   }
 
-  .lg\:bg-\[url\(\.\/assets\/home\/background-home-desktop\.jpg\)\]{
-    background-image: url(./assets/home/background-home-desktop.jpg);
+  .lg\:bg-\[url\(\.\.\/assets\/home\/background-home-desktop\.jpg\)\]{
+    background-image: url(../assets/home/background-home-desktop.jpg);
   }
 
-  .lg\:bg-\[url\(\.\/assets\/technology\/background-technology-desktop\.jpg\)\]{
-    background-image: url(./assets/technology/background-technology-desktop.jpg);
+  .lg\:bg-\[url\(\.\.\/assets\/technology\/background-technology-desktop\.jpg\)\]{
+    background-image: url(../assets/technology/background-technology-desktop.jpg);
   }
 
-  .lg\:bg-\[url\(\.\/assets\/crew\/background-crew-desktop\.jpg\)\]{
-    background-image: url(./assets/crew/background-crew-desktop.jpg);
+  .lg\:bg-\[url\(\.\.\/assets\/crew\/background-crew-desktop\.jpg\)\]{
+    background-image: url(../assets/crew/background-crew-desktop.jpg);
   }
 
   .lg\:p-0{
@@ -1775,6 +1817,10 @@ body{
 
   .xl\:text-\[3\.5rem\]{
     font-size: 3.5rem;
+  }
+
+  .xl\:text-\[3rem\]{
+    font-size: 3rem;
   }
 }
 
