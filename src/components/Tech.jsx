@@ -14,7 +14,7 @@ const Tech = ({name, active, images, description, children}) => {
                             <p className="text-gray-300 text-xl leading-8 tracking-widest max-w-md lg:max-w-none">{description}</p>
                         </motion.div>
                     </div>
-                    <motion.picture animate={{opacity: 1, y: 0}} transition={{duration: 0.5}} initial={{opacity: 0, y: 60}} className="basis-1/2">
+                    <motion.picture className="basis-1/2 flex items-center justify-center lg:min-h-[530px]" animate={{opacity: 1, y: 0}} transition={{duration: 0.5}} initial={{opacity: 0, y: 60}}>
                         <source media="(min-width: 992px)" srcSet={images.portrait} />
                         <img src={images.landscape} alt={`${name} image`} />
                     </motion.picture>
