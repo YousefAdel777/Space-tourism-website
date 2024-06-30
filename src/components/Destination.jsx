@@ -6,7 +6,7 @@ const Destination = ({active, name, images, description, travel, distance, child
         <div className="destination">
             {active && 
                 <>
-                    <motion.div initial={{opacity: 0, y: 50}} transition={{duration: 0.5}} animate={{opacity: 1, y:0}} className="destination-image flex lg:basis-[54%]">
+                    <motion.div initial={{opacity: 0, y: 50}} transition={{duration: 0.5}} animate={{opacity: 1, y:0}} className="destination-image min-h-[345px] flex lg:basis-[54%]">
                         <img src={images.png} alt={`${name} image`} />
                     </motion.div> 
                     <div className="flex flex-col lg:basis-[34.5%]">
