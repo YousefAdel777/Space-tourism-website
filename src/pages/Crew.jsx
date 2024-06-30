@@ -23,7 +23,7 @@ const Crew = ({crew}) => {
                         <CrewMember key={i} active={i === crewIndex} {...member}>
                             <div className="flex items-center justify-between">
                                 <button
-                                    onClick={() => setCrewIndex(prevState => (prevState + 1) % crew?.length)}
+                                    onClick={() => setCrewIndex(prevState => (prevState - 1) % crew?.length)}
                                     className="text-white w-10 h-10 lg:hidden"
                                 >
                                     <img src={chevronLeft} alt="Chevron left icon" />
@@ -42,7 +42,7 @@ const Crew = ({crew}) => {
                         );
                     })}
                     <button
-                        onClick={() => setCrewIndex(prevState => (prevState + 1) % crew?.length)}
+                        onClick={() => setCrewIndex(prevState => (prevState - 1) % crew?.length)}
                         className="absolute hidden text-white w-10 h-10 -left-14 top-1/2 -translate-y-1/2 lg:block"
                     >
                         <img src={chevronLeft} alt="Chevron left icon" />
